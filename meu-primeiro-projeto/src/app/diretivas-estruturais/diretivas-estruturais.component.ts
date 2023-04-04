@@ -15,6 +15,8 @@ export class DiretivasEstruturaisComponent implements OnInit {
     { nome: 'Isabel', idade: 55 },
   ];
 
+  public nome: string = 'dener';
+  
   constructor() {}
 
   ngOnInit(): void {
@@ -40,8 +42,6 @@ export class DiretivasEstruturaisComponent implements OnInit {
   }
 
   public onClickEventList(event: number) {
-
-    this.list.splice(event, 1)
-
+    this.list.splice(event, 1);
   }
 }
